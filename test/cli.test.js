@@ -19,6 +19,8 @@ test('CLI runs a matter from invite to paid invoice and refuses the wrong person
   assert.match(cli('decide', 'lease', 'dec-1', 'approve', '--as', 'client:Mai'), /Approved/)
   cli('invoice', 'lease', 'issue', 'Fees', '--amount', '900', '--as', 'professional:Jordan')
   cli('invoice', 'lease', 'status', 'inv-1', 'accepted', '--as', 'client:Mai')
+  assert.throws(() => cli('invoice', 'lease', 'status', 'inv-1', 'paid', '--as', 'professional:Jordan'), (e) => /TRANSITION_INVALID/.test(e.stderr))
+  cli('invoice', 'lease', 'status', 'inv-1', 'transfer_claimed', '--amount', '900', '--reference', 'REF-1', '--date', '2026-11-20', '--as', 'client:Mai')
   assert.throws(() => cli('invoice', 'lease', 'status', 'inv-1', 'paid', '--as', 'client:Mai'), (e) => /ROLE_FORBIDDEN/.test(e.stderr))
   cli('invoice', 'lease', 'status', 'inv-1', 'paid', '--as', 'professional:Jordan')
   assert.match(cli('export', 'lease', 'invoices'), /inv-1,Fees,900,paid,Jordan/)

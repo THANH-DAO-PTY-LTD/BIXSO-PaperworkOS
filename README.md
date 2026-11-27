@@ -5,13 +5,15 @@ One shared record of a paperwork matter between a client and the professionals h
 - **The client decides.** Professionals submit proposals, engagement terms, milestones and handovers. Only the client who owns the matter approves or declines them.
 - **Documents have a clear path.** Each item moves `needed → drafted → shared → reviewed → final`. A professional reviews a document before the client can mark it final, and a final document is not edited.
 - **Agreements are versioned.** Each new proposal is a new version. The agreement changes only when the client approves.
-- **Invoices match what was agreed.** An invoice must equal the approved proposal. A client's "I transferred it" is recorded as a claim with a reference; only the professional who issued the invoice reconciles it to paid.
+- **Invoices match what was agreed.** An invoice must equal the approved proposal. A client's "I transferred it" is recorded as a claim for the exact amount, with a date and reference. Only the professional who issued the invoice reconciles that claim to paid, and can void an invoice only before the client accepts it.
 - **Handover closes the matter** only when every document on the checklist is final.
 - **Every action is on the timeline**, and checklists and invoices export to CSV.
 
 ## Not advice, not a vault
 
-PaperworkOS is a record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
+PaperworkOS is a free record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
+
+The software is provided under the MIT license. Nothing in that license or in this repository excludes, restricts or modifies any right or remedy you have under the Australian Consumer Law, or any other law, that cannot lawfully be excluded.
 
 ## Try it
 
