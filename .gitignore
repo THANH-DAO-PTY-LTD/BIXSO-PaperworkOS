@@ -1,0 +1,4 @@
+.paperwork-os/
+node_modules/
+.DS_Store
+PROVENANCE-INTERNAL.json
