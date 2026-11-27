@@ -26,7 +26,7 @@ export const DECISION_TYPES = [
   { id: 'document_review', label: 'Document reviewed', hint: 'A shared document has been reviewed.' },
   { id: 'handover', label: 'Final handover', hint: 'Approval closes the matter.' },
 ]
-const FORMAL = new Set(['proposal', 'engagement', 'handover', 'document_review'])
+const FORMAL = new Set(['proposal', 'engagement', 'appointment', 'handover'])
 
 export const DOC_STATUSES = ['needed', 'drafted', 'shared', 'reviewed', 'final']
 // Who may move a checklist item into each status.
@@ -40,11 +40,12 @@ const DOC_MOVES = {
 
 export const INVOICE_STATUSES = ['issued', 'accepted', 'transfer_claimed', 'paid', 'declined', 'void']
 // from → to → role allowed. A client's transfer claim is never treated as payment;
-// only the issuing professional reconciles it to paid.
+// only the issuing professional reconciles it to paid, and only after a claim.
+// The issuer may void an invoice only while it is still issued.
 const INVOICE_MOVES = {
   issued: { accepted: 'client', declined: 'client', void: 'issuer' },
-  accepted: { transfer_claimed: 'client', paid: 'issuer', void: 'issuer' },
-  transfer_claimed: { paid: 'issuer', accepted: 'issuer' },
+  accepted: { transfer_claimed: 'client', declined: 'client' },
+  transfer_claimed: { paid: 'issuer' },
   paid: {},
   declined: {},
   void: {},
@@ -228,6 +229,7 @@ export function issueInvoice(previous, who, { title, amountAud, dueDate } = {}, 
 
 export function setInvoiceStatus(previous, who, id, status, evidence = {}, at) {
   const matter = clone(previous)
+  assertOpen(matter)
   actor(matter, who)
   const invoice = matter.invoices.find((i) => i.id === id)
   if (!invoice) throw new MatterError('INVOICE_NOT_FOUND', `No invoice ${id}`)
@@ -237,7 +239,8 @@ export function setInvoiceStatus(previous, who, id, status, evidence = {}, at) {
   const permitted = allowed === 'issuer' ? (who.role === 'professional' && who.name === invoice.issuer) : who.role === allowed
   if (!permitted) throw new MatterError('ROLE_FORBIDDEN', allowed === 'issuer' ? 'Only the issuing professional can do that' : `Only the ${allowed} can do that`)
   if (status === 'transfer_claimed') {
-    if (!(Number(evidence.amountAud) > 0) || !text(evidence.reference)) throw new MatterError('EVIDENCE_REQUIRED', 'A transfer claim states the amount and a reference')
+    if (!text(evidence.reference) || !text(evidence.date)) throw new MatterError('EVIDENCE_REQUIRED', 'A transfer claim states the amount, the date and a reference')
+    if (Number(evidence.amountAud) !== invoice.amount_aud) throw new MatterError('AMOUNT_MISMATCH', 'A transfer claim is for the exact invoice amount')
     invoice.transfer = { amount_aud: Number(evidence.amountAud), date: text(evidence.date, 20), reference: text(evidence.reference, 120) }
   }
   invoice.history.push({ from: invoice.status, to: status, by: who.name, at: stamp(at) })

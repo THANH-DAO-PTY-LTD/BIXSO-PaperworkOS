@@ -1,6 +1,6 @@
 {
   "name": "bixso-paperwork-os",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared paperwork matters between a client and their professionals: document checklist, decisions, agreements and invoice records.",
   "private": true,
   "license": "MIT",
