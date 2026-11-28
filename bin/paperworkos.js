@@ -3,7 +3,7 @@ import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from '
 import { join } from 'node:path'
 import * as pw from '../src/matter.js'
 
-const HELP = `PaperworkOS: one shared record of a matter between a client and their professionals
+const HELP = `Paperwork OS: one shared record of a matter between a client and their professionals
 
 Usage
   paperworkos new <id> --client NAME [--title TEXT]
@@ -20,7 +20,7 @@ Usage
   paperworkos show <id>
 
 Matters are saved in .paperwork-os/<id>.json (or PAPERWORKOS_HOME).
-PaperworkOS keeps records. It does not sign documents, hold money or give legal or financial advice.
+Paperwork OS keeps records. It does not sign documents, hold money or give legal or financial advice.
 Use fictional records.`
 
 function parse(argv) {

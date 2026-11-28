@@ -1,4 +1,4 @@
-# BIXSO PaperworkOS
+# BIXSO Paperwork OS
 
 One shared record of a paperwork matter between a client and the professionals helping them, such as a lawyer, accountant, conveyancer or agent. Everyone works from the same document checklist, decisions and invoice records, and the client stays in charge.
 
@@ -11,7 +11,7 @@ One shared record of a paperwork matter between a client and the professionals h
 
 ## Not advice, not a vault
 
-PaperworkOS is a free record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
+Paperwork OS is a free record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
 
 The software is provided under the MIT license. Nothing in that license or in this repository excludes, restricts or modifies any right or remedy you have under the Australian Consumer Law, or any other law, that cannot lawfully be excluded.
 
@@ -53,7 +53,7 @@ Every function returns a new matter and leaves the previous one unchanged.
 
 ## Help shape it
 
-Open an [issue](https://github.com/THANH-DAO-PTY-LTD/BIXSO-PaperworkOS/issues) if a step does not match how your matters run. See [CONTRIBUTING](CONTRIBUTING.md) and the [security policy](SECURITY.md).
+Open an [issue](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS/issues) if a step does not match how your matters run. See [CONTRIBUTING](CONTRIBUTING.md) and the [security policy](SECURITY.md).
 
 ## License
 
