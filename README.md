@@ -16,6 +16,14 @@ One shared record of a paperwork matter between a client and the professionals h
 - **Builders:** developers of client portals for lawyers, accountants, conveyancers and agents can use the matter, document and invoice rules.
 - **Professionals and their clients:** tell us which step in your matters doesn't fit.
 
+<!-- bixso-os-origin:start -->
+## Where this comes from
+
+These rules come from **[LawsFinder](https://lawsfinder.com)**, a platform for legal procedures and the professionals who handle them that BIXSO builds and runs. This repository is the open concept and a lite reference implementation of its rules: plain functions, local files and no accounts. The product adds what a real service needs, such as accounts, hosting and support, and it is still being built.
+
+Ideas and changes made here are reviewed for LawsFinder as well. See this project's [roadmap](docs/ROADMAP.md) and [how BIXSO OS is run](https://github.com/THANH-DAO-PTY-LTD/.github/blob/main/GOVERNANCE.md).
+<!-- bixso-os-origin:end -->
+
 ## Not advice, not a vault
 
 Paperwork OS is a free record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
