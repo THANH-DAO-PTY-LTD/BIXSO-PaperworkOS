@@ -1,5 +1,7 @@
 # BIXSO Paperwork OS
 
+![BIXSO Paperwork OS: real demo output of BIXSO Paperwork OS with fictional data](docs/media/bixso-paperwork-os.png)
+
 One shared record of a paperwork matter between a client and the professionals helping them, such as a lawyer, accountant, conveyancer or agent. Everyone works from the same document checklist, decisions and invoice records, and the client stays in charge.
 
 - **The client decides.** Professionals submit proposals, engagement terms, milestones and handovers. Only the client who owns the matter approves or declines them.
