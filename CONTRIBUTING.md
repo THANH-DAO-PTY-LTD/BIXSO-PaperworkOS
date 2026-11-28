@@ -10,3 +10,9 @@ Use a GitHub issue for feedback or a bug. Include a fictional matter, the comman
 Changes that let someone other than the client decide, mark an unreviewed document final, or treat a transfer claim as payment need an issue first. This project does not accept legal, tax or regulatory content such as rules, forms or templates.
 
 Submit only material you have the right to contribute. Contributions to this repository are provided under its [MIT license](LICENSE).
+
+## Sign off your commits
+
+Every commit in a pull request must be signed off. Use `git commit -s`, which adds a line like `Signed-off-by: Your Name <you@example.com>`. By signing off, you certify the [Developer Certificate of Origin 1.1](https://developercertificate.org): you wrote the change, or otherwise have the right to submit it under this project's license. A check on each pull request looks for the sign-off.
+
+Please also follow the [code of conduct](CODE_OF_CONDUCT.md).

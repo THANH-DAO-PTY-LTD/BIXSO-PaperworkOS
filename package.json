@@ -4,10 +4,32 @@
   "description": "Shared paperwork matters between a client and their professionals: document checklist, decisions, agreements and invoice records.",
   "private": true,
   "license": "MIT",
+  "author": "Thanh Dao Pty Ltd",
+  "homepage": "https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS/issues"
+  },
+  "keywords": [
+    "bixso",
+    "bixso-os",
+    "local-first",
+    "open-source",
+    "documents",
+    "checklist",
+    "workflow"
+  ],
   "type": "module",
   "main": "src/matter.js",
-  "bin": { "paperworkos": "bin/paperworkos.js" },
-  "engines": { "node": ">=22" },
+  "bin": {
+    "paperworkos": "bin/paperworkos.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "test": "node --test",
     "demo": "node examples/lease-renewal.js"

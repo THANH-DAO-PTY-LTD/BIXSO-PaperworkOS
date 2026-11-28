@@ -55,6 +55,29 @@ Every function returns a new matter and leaves the previous one unchanged.
 
 Open an [issue](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS/issues) if a step does not match how your matters run. See [CONTRIBUTING](CONTRIBUTING.md) and the [security policy](SECURITY.md).
 
+<!-- bixso-os-family:start -->
+## BIXSO OS family
+
+Small, local-first, MIT-licensed tools for running real work, each built from the rules of a BIXSO product.
+
+| Project | What it does |
+| --- | --- |
+| [BIXSO Service OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Service-OS) | Run a one-person service business: Company, Flow and Work in a local web app. |
+| [BIXSO Sourcing OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Sourcing-OS) | B2B sourcing workflows from RFQ to delivered order, with a receipt for every step. |
+| [BIXSO Consulting OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Consulting-OS) | An evidence-first record of a consulting engagement. |
+| [BIXSO Construction OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Construction-OS) | An outdoor or landscape job from site survey to handover. |
+| [BIXSO Paperwork OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Paperwork-OS) (this project) | One shared record of a paperwork matter between a client and their professionals. |
+| [BIXSO Travel OS](https://github.com/THANH-DAO-PTY-LTD/BIXSO-Travel-OS) | Trip plans where every suggestion explains itself, plus traveller-host meetups. |
+
+Release news, questions and ideas: [r/BIXSO](https://www.reddit.com/r/BIXSO/).
+
+## Work with BIXSO
+
+Want this set up for your business, or shaped around how your team actually works? BIXSO provides business workflow advisory and implementation. See [bixso.ai](https://bixso.ai).
+<!-- bixso-os-family:end -->
+
 ## License
 
 [MIT](LICENSE) · Copyright (c) 2026 Thanh Dao Pty Ltd. See [docs/PROVENANCE.md](docs/PROVENANCE.md).
+
+BIXSO and the BIXSO logo are trademarks of Thanh Dao Pty Ltd. The MIT license covers the code, not the names or logo; see [TRADEMARKS.md](TRADEMARKS.md).
