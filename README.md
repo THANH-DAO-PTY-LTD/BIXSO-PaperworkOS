@@ -11,6 +11,11 @@ One shared record of a paperwork matter between a client and the professionals h
 - **Handover closes the matter** only when every document on the checklist is final.
 - **Every action is on the timeline**, and checklists and invoices export to CSV.
 
+## Who it's for
+
+- **Builders:** developers of client portals for lawyers, accountants, conveyancers and agents can use the matter, document and invoice rules.
+- **Professionals and their clients:** tell us which step in your matters doesn't fit.
+
 ## Not advice, not a vault
 
 Paperwork OS is a free record-keeping tool. It contains no legal, tax or financial content and does not give advice. It does not create legally binding signatures, hold or move money, or verify who anyone is. Talk to a qualified professional about your situation.
